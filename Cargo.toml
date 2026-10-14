@@ -1,0 +1,13 @@
+[package]
+name = "steam-now-playing"
+version = "0.1.0"
+edition = "2024"
+description = "Mirror the current system now-playing track (e.g. Apple Music) into your Steam in-game status"
+
+[dependencies]
+windows = { version = "0.62", features = ["Media_Control"] }
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time", "signal"] }
+steam-client-rs = "0.2"
+steam-auth-rs = "0.1"

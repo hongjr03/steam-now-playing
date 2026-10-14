@@ -1,0 +1,4 @@
+/target
+# TokenStore writes a Steam refresh token here — never commit this.
+steam_session.json
+steam_session.json.tmp
